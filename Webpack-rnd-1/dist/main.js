@@ -1,0 +1,1 @@
+(()=>{"use strict";console.warn("This is other function")})();
