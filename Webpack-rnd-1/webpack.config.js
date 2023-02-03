@@ -11,4 +11,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "output.js", //bundled js custom file name
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
+    port: 3800,
+  },
 };
