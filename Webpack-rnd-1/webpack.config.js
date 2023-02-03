@@ -1,3 +1,4 @@
+// The node:path module provides utilities for working with file and directory paths. It can be accessed using:
 const path = require("path");
 
 module.exports = {
@@ -10,4 +11,4 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "output.js", //bundled js custom file name
   },
-}; 
+};
