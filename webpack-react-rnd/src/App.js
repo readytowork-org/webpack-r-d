@@ -9,7 +9,7 @@ function App() {
           fontSize: "22px",
         }}
       >
-        Hello world
+        Hello world. This is homepage.
       </p>
     </div>
   );
