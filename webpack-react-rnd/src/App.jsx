@@ -1,20 +1,12 @@
 import React from "react";
+import "./style.css";
 
-function App() {
+const App = () => {
   return (
-    <div
-      style={{
-        justifyContent: "center",
-        alignItems: "center",
-        display: "flex",
-        fontSize: "22px",
-        background: "green",
-        minHeight: "100vh",
-      }}
-    >
+    <div className="bg">
       <p>Hello world. This is homepage.</p>
     </div>
   );
-}
+};
 
 export default App;
