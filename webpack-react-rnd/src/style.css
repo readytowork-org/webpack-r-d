@@ -16,6 +16,11 @@ body {
   color: rgb(27, 36, 162);
 }
 
+.main-wrapper img {
+  width: 200px;
+  height: auto;
+}
+
 .main-wrapper span {
   margin: 50px 0 40px 0;
   font-size: 35px;
