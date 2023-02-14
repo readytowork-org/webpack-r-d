@@ -1,8 +1,37 @@
-.bg {
+body {
+  margin: 0px;
+}
+
+.main-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
-  background: green;
+  background: rgb(116 194 107);
   min-height: 100vh;
+}
+
+.main-wrapper p {
+  font-size: 40px;
+  color: rgb(27, 36, 162);
+}
+
+.main-wrapper span {
+  margin: 50px 0 40px 0;
+  font-size: 35px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btn {
+  min-width: 80px;
+  min-height: 30px;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
