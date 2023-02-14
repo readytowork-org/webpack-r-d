@@ -1,27 +1,30 @@
-import React, { useState } from "react";
-import "./style.css";
+import React from "react";
+import { Link, Route, Switch } from "react-router-dom";
+import Counter from "./Counter.jsx";
+import Home from "./Home.jsx";
 import logo from "./react.png";
 
 const App = () => {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="main-wrapper">
-      <img src={logo} alt="data item" />
-      <p>Counter JS</p>
-      <span>{count}</span>
-      <div className="button-container">
-        <button className="btn" onClick={() => setCount(count + 1)}>
-          +
-        </button>
-        <button
-          className="btn"
-          onClick={() => count > 0 && setCount(count - 1)}
-        >
-          -
-        </button>
+    <>
+      <div className="header">
+        <ul>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/counter"}>Counter</Link>
+          </li>
+        </ul>
       </div>
-    </div>
+      <div className="main-wrapper">
+        <img src={logo} alt="data item" />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/counter" component={Counter} />
+        </Switch>
+      </div>
+    </>
   );
 };
 
