@@ -1,8 +1,20 @@
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import Counter from "./Counter.jsx";
-import Home from "./Home.jsx";
 import logo from "./react.png";
+import "./style.css";
+import Loadable from "react-loadable";
+
+const LoaderComponent = () => <p>Please wait. Loading....</p>;
+
+const Home = Loadable({
+  loader: () => import("./Home"),
+  loading: LoaderComponent,
+});
+
+const Counter = Loadable({
+  loader: () => import("./Counter"),
+  loading: LoaderComponent,
+});
 
 const App = () => {
   return (
