@@ -7,12 +7,12 @@ import Loadable from "react-loadable";
 const LoaderComponent = () => <p>Please wait. Loading....</p>;
 
 const Home = Loadable({
-  loader: () => import("./Home"),
+  loader: () => import(/*webpackChunkName:"Homepage"*/ "./Home"),
   loading: LoaderComponent,
 });
 
 const Counter = Loadable({
-  loader: () => import("./Counter"),
+  loader: () => import(/*webpackChunkName:"Counterpage"*/ "./Counter"),
   loading: LoaderComponent,
 });
 

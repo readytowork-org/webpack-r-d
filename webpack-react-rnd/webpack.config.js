@@ -8,7 +8,8 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "main.js",
     //If you want to create unique bundle file everytime you build the project then you can use fullhash like this
-    // filename:"main.[fullhash].js"
+    // filename:"main.[fullhash].js"]
+    chunkFilename: "[name].bundle.[fullhash].js",
   },
   module: {
     rules: [
